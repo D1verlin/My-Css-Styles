@@ -1,0 +1,63 @@
+/* ==UserStyle==
+@name           MangaLib
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    MangaLib Rebuild
+@author         Diverlin
+@var color Primary-Default "Primary Default" #673AB7
+@var color Primary-Lighten "Primary Lighten" #8744ff
+@var color Primary-Darken "Primary Darken" #582fa0
+==/UserStyle== */
+
+@-moz-document domain("mangalib.me") {
+    :root, html[data-mode=dark] {
+    --primary: var(--Primary-Default);
+    --primary-lighten: var(--Primary-Lighten);
+    --primary-darken: var(--Primary-Darken);
+
+}
+
+html[data-mode=dark] {
+    --button-primary-bg: var(--Primary-Lighten);
+    --button-primary-bg-hover: var(--Primary-Lighten);
+    --button-primary-bg-active: var(--Primary-Lighten);
+    --purple: var(--Primary-Lighten);
+    --text-link: var(--Primary-Lighten);
+
+}
+
+
+
+.tag-item:hover {
+    color: var(--Primary-Default);
+    text-decoration: none;
+}
+
+.header-right-menu__avatar {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 56px;
+    cursor: pointer;
+}
+
+.header__logo {
+    opacity: 0;
+}
+.header__logo:hover {
+    opacity: 0;
+}
+.xmas-three {
+    display:none;
+}
+.header__item {
+    min-width:0;
+}
+.header__other-sites {
+    right: -20px;
+}
+
+  .header__left {
+background: url(https://d1verlin.github.io/my-stylus/MangaLib/img/logo.png) no-repeat; /* Your image for logo */
+} 
+}
