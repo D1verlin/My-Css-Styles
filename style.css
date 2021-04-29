@@ -1,0 +1,178 @@
+:root {
+	--bg:#151515;
+	--font-primary:#FFCC8E;
+	--font-hover:#fff;
+	--font-static:rgba(255, 255, 255, 0.5);
+}
+
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #151515;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--bg);
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+main {
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.bar {
+	color: var(--font-static);
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#bar-elem {
+	color: var(--font-hover);
+	font-size: 32px;
+	transition: 0.3s;
+	cursor: pointer;
+	opacity: 50%;
+}
+
+#bar-set {
+	color: var(--font-hover);
+	font-size: 32px;
+	transition: 0.3s;
+	cursor: pointer;
+	opacity: 50%;
+}
+
+#bar-set:hover {
+	opacity: 100%;
+}
+
+
+#bar-elem:hover {
+	opacity: 100%;
+}
+
+header h1 {
+	font-family: Google Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 46px;
+	color: var(--font-primary);
+}
+
+.list {
+	display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(4, 70px);
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	margin: 20px;
+}
+
+#button {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF1A;
+    background: #0000001A;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 100%;
+    width: 100%;
+    color: var(--font-static);
+}
+
+#button:hover {
+	transform: scale(0.98);
+	color: var(--font-hover);
+	background: linear-gradient(106.49deg, rgba(255, 204, 142, 0.1) 21.01%, rgba(0, 0, 0, 0.1) 146.83%);
+}
+
+#button img {
+	width: 32px;
+	height: 32px;
+	border: 1px solid #FFFFFF1A;
+	background: #0000001A;
+	padding: 9px;
+	border-radius: 7px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#button p {
+	font-family: Google Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 25px;
+	
+}
+
+
+#button_sm {
+	color: var(--font-static);
+    justify-content: flex-end;
+    border: 1px solid #FFFFFF1A;
+    background: #0000001A;
+    padding: 3px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}

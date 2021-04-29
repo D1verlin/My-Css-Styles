@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MangaLib</title>
+	<link rel="stylesheet" type="text/css" href="../all.css">
+	<link rel="stylesheet" type="text/css" href="../../Fonts/font.css">
+</head>
+<body>
+	<div class="preloader">
+  <div class="preloader__row">
+  </div>
+</div>
+
+	<div class="container">
+<aside>
+	<div class="box" id="info">
+		<header>
+			<img src="https://mangalib.me/icons/favicon-32x32.png"> <h1>MangaLib</h1>
+		</header>
+		<div class="info_block">
+			<div>
+						<p>Data of
+Creation:</p><p id="date">19.08.2020</p>
+			</div>
+<div>
+			<p>Used on
+Site:</p><p id="date">mangalib.me</p>
+</div>
+</div>
+<a href="../../index.html">
+<div class="button" id="b_anim">Back</div></a>
+	</div>
+	<div class="box" id="download">
+				<header>
+			 <h1>Style.css</h1>
+		</header>
+		<a href="#" class="button_s" id="b_anim">Install via Stylus</a>
+<a href="#" class="button_s" id="b_anim">Copy</a>
+	</div>
+	<div class="box" id="links">
+				<header>
+			 <h1>Other styles</h1>
+		</header>
+		<div class="other_list">
+		<a href="#" class="button_b" id="b_anim">Snow</a>
+		<a href="#" class="button_b" id="b_anim">YA</a>
+		<a href="#" class="button_b" id="b_anim">Soon..</a>
+		</div>
+	</div>
+	</aside>
+
+	<div class="box" id="files">
+				<header>
+			 <h1>Files</h1>
+		</header>
+	</div>
+
+
+	<div class="box" id="changes">
+				<header>
+			 <h1>Changes</h1>
+		</header>
+	</div>
+</div>
+
+<script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
+</body>
+</html>

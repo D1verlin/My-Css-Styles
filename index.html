@@ -1,9 +1,74 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>my-stulus</title>
+  <title>My Styles</title>
+  <link rel="stylesheet" type="text/css" href="Fonts/font.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   </head>
-  <body style="background-color:#151515;">
-  <h1 style="font-size:72px; text-align:center; color:white;">Coming soon...</h1>
+  <body>
+  	<div class="preloader">
+  <div class="preloader__row">
+  </div>
+</div>
+  	<main id="background">
+  <header>
+  	<h1>My styles</h1>
+  	<nav class="bar">
+<a href="#"><span class="material-icons" id="bar-elem">
+info
+</span></a>
+  	</nav>
+  </header>
+  <div class="list">
+  	<a href="Products/MangaLib/MangaLib.html">
+  	<div id="button">
+  		<img src="https://mangalib.me/icons/favicon-32x32.png">
+  		<p>MangaLib</p>
+  	</div></a>
+  	
+  	  	<a href="#">
+  	<div id="button">
+  		<img src="Component 3.png">
+  		<p>Text</p>
+  	</div></a>
+  	
+  	  	<a href="#">
+  	<div id="button">
+  		<img src="Component 3.png">
+  		<p>Text</p>
+  	</div></a>
+  	
+  	  	<a href="#">
+  	<div id="button">
+  		<img src="Component 3.png">
+  		<p>Text</p>
+  	</div></a>
+  	
+  	  	<a href="#">
+  	<div id="button">
+  		<img src="Component 3.png">
+  		<p>Text</p>
+  	</div></a>
+  	
+  	  	<a href="#">
+  	<div id="button">
+  		<img src="Component 3.png">
+  		<p>Text</p>
+  	</div></a>
+  	
+  	<!-- list end. -->
+  </div>
+  </main>
+    <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
   </body>
 </html>
