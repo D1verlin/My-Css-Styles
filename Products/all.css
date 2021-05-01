@@ -2,7 +2,7 @@
 	--bg:#151515;
 	--font-primary:#FFCC8E;
 	--font-hover:#fff;
-	--font-static:rgba(255, 255, 255, 0.5);
+	--font-static:#EBEBEB;
 	--bg-secondry:#232323;
 	--font-header: #fff;
 }
@@ -128,7 +128,7 @@ p {
 	font-weight: 500;
 	font-size: 24px;
 	line-height: 31px;
-	color: #EBEBEB;
+	color: var(--font-static);
 }
 
 #date {
@@ -181,7 +181,7 @@ a {
 }
 
 .button_b {
-    color: #fff;
+    color: var(--font-static);
     font-family: 'Google Sans';
     font-size: 18px;
     display: flex;
@@ -208,4 +208,83 @@ a {
 
 #b_anim {
 	transition: 0.3s;
+}
+
+.inside_folder {
+	opacity: 50%;
+	padding-left: 5px;
+	display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+ul {
+	list-style: none;
+	padding: 20px;
+}
+
+li {
+	color: var(--font-static);
+	font-family: Google Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 31px;
+	cursor: default;
+}
+
+li span {
+	padding-right: 7px;
+}
+
+#h_s {
+	font-family: Google Sans;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 25px;
+	color: var(--font-header);
+	margin:0;
+	margin-bottom: 5px;
+}
+
+#i_s {
+	font-size: 18px;
+	color: var(--font-static);
+	opacity: 70%;
+	font-weight: normal;
+}
+
+.changes_container {
+	padding: 20px;
+	display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "B CP"
+    "L CP";
+}
+
+#block_s {
+	background: rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 10px;
+	padding: 10px;
+	width: fit-content;
+	cursor: default;
+	transition: 0.3s;
+	display: flex;
+	flex-direction: column;
+}
+
+#block_s:hover {
+	background: linear-gradient(106.49deg, rgba(255, 204, 142, 0.1) 21.01%, rgba(0, 0, 0, 0.1) 146.83%);
+	transform: scale(0.98);
+}
+
+#block_s img {
+	background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 5px;
 }

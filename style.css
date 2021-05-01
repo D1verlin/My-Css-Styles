@@ -1,5 +1,6 @@
 :root {
 	--bg:#151515;
+	--secondry-bg:#232323;
 	--font-primary:#FFCC8E;
 	--font-hover:#fff;
 	--font-static:rgba(255, 255, 255, 0.5);
@@ -175,4 +176,138 @@ header h1 {
 
 a {
 	text-decoration: none;
+}
+
+
+.modal {
+	transition: 0.3s;
+	  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--secondry-bg);
+	padding: 15px;
+	width: 260px;
+	height: 337px;
+	border-radius: 0.5rem;
+}
+
+.close {
+	color: var(--font-static);
+	float: right;
+    width: 32px;
+    height: 32px;
+    line-height: 1.8rem;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.close:hover {
+	transform: scale(0.98);
+	color: var(--font-hover);
+	background: linear-gradient(106.49deg, rgba(255, 204, 142, 0.1) 21.01%, rgba(0, 0, 0, 0.1) 146.83%);
+}
+.show-modal {
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1.0);
+	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content header {
+	margin: 0;
+
+}
+
+.modal-content h1 {
+	color: #fff;
+}
+
+p {
+	font-family: Google Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 20px;
+	color:#DBDBDB;
+
+}
+
+p span {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 23px;
+	color: #fff;
+}
+
+.header_s {
+	font-family: Google Sans;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+
+	letter-spacing: 0.02em;
+
+	color: #FFFFFF;
+}
+
+.modal_m {
+	display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.links span {
+	display: flex;
+	grid-gap: 5px;
+	margin-bottom: 5px;
+}
+
+span {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+
+.links a {
+	font-family: Google Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+	transition: 0.3s;
+	letter-spacing: 0.02em;
+	color: var(--font-primary);
+}
+
+.links a:hover {
+	font-size: 18px;
 }

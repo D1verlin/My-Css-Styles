@@ -4,6 +4,8 @@
 	<title>MangaLib</title>
 	<link rel="stylesheet" type="text/css" href="../all.css">
 	<link rel="stylesheet" type="text/css" href="../../Fonts/font.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
 	<div class="preloader">
@@ -34,8 +36,8 @@ Site:</p><p id="date">mangalib.me</p>
 				<header>
 			 <h1>Style.css</h1>
 		</header>
-		<a href="#" class="button_s" id="b_anim">Install via Stylus</a>
-<a href="#" class="button_s" id="b_anim">Copy</a>
+		<a href="https://raw.githubusercontent.com/D1verlin/my-stylus/main/Products/MangaLib/mangalib.user.css" class="button_s" id="b_anim">Install via Stylus</a>
+<a href="mangalib.user.css" class="button_s" id="b_anim">Copy</a>
 	</div>
 	<div class="box" id="links">
 				<header>
@@ -53,6 +55,17 @@ Site:</p><p id="date">mangalib.me</p>
 				<header>
 			 <h1>Files</h1>
 		</header>
+		<ul>
+			<li onclick="List()" style="cursor: pointer;"><span class="material-icons" id="folder">
+folder_open
+</span>img</li>
+			<li class="inside_folder" id="List"><span class="material-icons">
+image
+</span>logo.png</li>
+			<li><span class="material-icons">
+description
+</span>style.css</li>
+		</ul>
 	</div>
 
 
@@ -60,6 +73,24 @@ Site:</p><p id="date">mangalib.me</p>
 				<header>
 			 <h1>Changes</h1>
 		</header>
+		<div class="changes_container">
+			<div id="block_s" style="grid-area: B;">
+			<header id="h_s">Briefly</header>
+			<p id="i_s">| Color Palette</p>
+			<p id="i_s">| Some images</p>
+			</div>
+
+			<div id="block_s" style="grid-area: L;">
+			<header id="h_s">Logo</header>
+			<img src="img/logo.png">
+			</div>			
+
+			<div id="block_s" style="grid-area: CP;">
+			<header id="h_s">Color Palette</header>
+			<p id="i_s">You can change the color palette via the settings in the plugin Stylus.</p>
+			</div>	
+
+		</div>
 	</div>
 </div>
 
@@ -71,6 +102,18 @@ Site:</p><p id="date">mangalib.me</p>
         document.body.classList.remove('loaded_hiding');
       }, 500);
     }
+
+        function List() {
+    var y = document.getElementById("folder");
+    var x = document.getElementById("List");
+    if (x.style.display === "none") {
+        x.style.display = "flex";
+        y.innerHTML = "folder_open";
+    } else {
+        x.style.display = "none";
+        y.innerHTML = "folder";
+    }
+}
   </script>
 </body>
 </html>
