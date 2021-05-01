@@ -170,14 +170,13 @@ a {
     border-radius: 10px;
     color: var(--font-static);
     font-family: 'Google Sans';
-    font-size: 18px;
+    font-size: 20px;
     display: flex;
     width: 260px;
-    height: 33px;
+    height: 50px;
     align-items: center;
     justify-content: center;
-   	margin-left: 20px;
-   	margin-top: 15px;
+    margin:20px;
 }
 
 .button_b {
