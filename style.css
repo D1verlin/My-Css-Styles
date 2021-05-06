@@ -311,3 +311,29 @@ span {
 .links a:hover {
 	font-size: 18px;
 }
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-family: Google Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80%;
+  line-height: 23px;
+  color: #646464;
+  text-align: center;
+  cursor: default;
+}
+
+footer a {
+	color: #646464;
+	transition: 0.3s;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+footer a:hover {
+	color: #fff;
+}
