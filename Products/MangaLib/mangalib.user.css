@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           MangaLib
 @namespace      https://github.com/D1verlin
-@version        1.0.0
+@version        1.0.1
 @author         Diverlin <dodobrest006@gmail.com> (https://diverlin.tk)
 @var color Primary-Default "Primary Default" #673AB7
 @var color Primary-Lighten "Primary Lighten" #8744ff
@@ -57,6 +57,6 @@ html[data-mode=dark] {
 }
 
   .header__left {
-background: url(https://d1verlin.github.io/my-styles/Products/MangaLib/img/logo.png) no-repeat; /* Your image for logo */
+background: url(https://d1verlin.github.io/My-Css-Styles/Products/MangaLib/img/logo.png) no-repeat; /* Your image for logo */
 } 
     }
