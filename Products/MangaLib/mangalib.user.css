@@ -1,12 +1,15 @@
 /* ==UserStyle==
 @name           MangaLib
-@namespace      https://github.com/D1verlin
+@namespace      github.com/openstyles/stylus
 @version        1.0.1
 @updateURL https://github.com/My-Css-Styles/Products/MangaLib/mangalib.user.css
-@author         Diverlin <dodobrest006@gmail.com> (https://diverlin.tk)
+@description    MangaLib Rebuild
+@author         Diverlin
 @var color Primary-Default "Primary Default" #673AB7
 @var color Primary-Lighten "Primary Lighten" #8744ff
 @var color Primary-Darken "Primary Darken" #582fa0
+@preprocessor stylus
+@var select TransparentH "transparent header" ["Visible:Visible", "Invisible:Invisible"]
 ==/UserStyle== */
 
 @-moz-document domain("mangalib.me") {
@@ -14,8 +17,17 @@
     --primary: var(--Primary-Default);
     --primary-lighten: var(--Primary-Lighten);
     --primary-darken: var(--Primary-Darken);
+if TransparentH == Invisible {
+      .header {
+        --background-header: transparent;
+      }
+    } else if TransparentH == Visible {
+        .header {
+        --background-header: #1c1c1e;
+      }
+    }
+        }
 
-}
 
 html[data-mode=dark] {
     --button-primary-bg: var(--Primary-Lighten);
@@ -23,6 +35,7 @@ html[data-mode=dark] {
     --button-primary-bg-active: var(--Primary-Lighten);
     --purple: var(--Primary-Lighten);
     --text-link: var(--Primary-Lighten);
+    
 
 }
 
@@ -40,6 +53,8 @@ html[data-mode=dark] {
     border-radius: 56px;
     cursor: pointer;
 }
+
+
 
 .header__logo {
     opacity: 0;
