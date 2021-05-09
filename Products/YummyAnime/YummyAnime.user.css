@@ -1,0 +1,52 @@
+/* ==UserStyle==
+@name           YummyAnime
+@namespace      github.com/D1verlin
+@version        1.0.0
+@updateURL      https://d1verlin.github.io/My-Css-Styles/Products/MangaLib/YummyAnime.user.css
+@description    YummyAnime Rebuild
+@author         Diverlin
+@var color Primary-color "Primary Color (main-red)" #8694ff
+@var color green "main green" #484f88
+==/UserStyle== */
+
+@-moz-document domain("yummyanime.club") {
+    body[data-theme=dark] {
+    --main-black: #333;
+    --main-black-hover: #444;
+    --main-red: var(--Primary-color);
+    --main-red-hover: #e47272;
+    --main-green: var(--green);
+    --main-green-hover: var(--Primary-color);
+    --main-purple: #32cfda;
+    --main-yellow: #f2b800;
+    --main-yellow-hover: #ffc50e;
+    --main-text: #eee;
+    --light-text: #fff;
+    --main-button: #222;
+    --input: #222;
+    --input-active: #222;
+    --background-tr: transparent;
+    --background-first: #333;
+    --background-second: #2c2c2c;
+    --background-third: #292929;
+    --background-fourth: #222;
+    --border-first: #444;
+    --border-second: #4b4b4b;
+    --border-third: #555;
+    --border-fourth: #999;
+    --border-fifth: #aaa;
+    --top-img: url(/img/top15.jpg);
+    --loading-img: url(/img/loading-w.svg);
+    --loading-img-invert: url(/img/loading.svg);
+}
+    
+body .logo {
+    background: url(https://d1verlin.github.io/My-Css-Styles/Products/YummyAnime/img/logo-large.png) no-repeat;
+}
+    
+    
+body .fixed .logo {
+    background: url(https://d1verlin.github.io/My-Css-Styles/Products/YummyAnime/img/logo-small.png) no-repeat;
+}
+    
+}
