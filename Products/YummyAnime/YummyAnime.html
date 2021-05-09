@@ -3,6 +3,7 @@
 <head>
 	<title>M.C.S | MangaLib</title>
 	<link rel="stylesheet" type="text/css" href="../all.css">
+	<link rel="stylesheet" type="text/css" href="Grid.css">
 	<link rel="stylesheet" type="text/css" href="../../Fonts/font.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -18,16 +19,16 @@
 <aside>
 	<div class="box" id="info">
 		<header>
-			<img src="https://mangalib.me/icons/favicon-32x32.png"> <h1>MangaLib</h1>
+			<img src="https://mangalib.me/icons/favicon-32x32.png"> <h1>YummyAnime</h1>
 		</header>
 		<div class="info_block">
 			<div>
 						<p>Data of
-Creation:</p><p id="date">19.08.2020</p>
+Creation:</p><p id="date">09.05.2021</p>
 			</div>
 <div>
 			<p>Used on
-Site:</p><p id="date">mangalib.me</p>
+Site:</p><p id="date">yummyanime.club</p>
 </div>
 
 </div>
@@ -36,9 +37,9 @@ Site:</p><p id="date">mangalib.me</p>
 	</div>
 	<div class="box" id="download">
 				<header>
-			 <h1>Style.css</h1>
+			 <h1>#.user.css</h1>
 		</header>
-		<a href="https://raw.githubusercontent.com/D1verlin/my-stylus/main/Products/MangaLib/mangalib.user.css" class="button_s" id="b_anim">Install via Stylus / Copy</a>
+		<a href="https://raw.githubusercontent.com/D1verlin/My-Css-Styles/main/Products/YummyAnime/YummyAnime.user.css" class="button_s" id="b_anim">Install via Stylus / Copy</a>
 	</div>
 	<div class="box" id="links">
 				<header>
@@ -46,7 +47,7 @@ Site:</p><p id="date">mangalib.me</p>
 		</header>
 		<div class="other_list">
 		<a href="#" class="button_b" id="b_anim">Snow</a>
-		<a href="#" class="button_b" id="b_anim">YA</a>
+		<a href="../MangaLib/MangaLib.html" class="button_b" id="b_anim">MangaLib</a>
 		<a href="#" class="button_b" id="b_anim">Soon..</a>
 		</div>
 	</div>
@@ -62,10 +63,13 @@ folder_open
 </span>img</li>
 			<li class="inside_folder" id="List"><span class="material-icons">
 image
-</span>logo.png</li>
+</span>logo-large.png</li>
+<li class="inside_folder" id="List2"><span class="material-icons">
+image
+</span>logo-small.png</li>
 			<li><span class="material-icons">
 description
-</span>style.css</li>
+</span>yummyanime.user.css</li>
 		</ul>
 	</div>
 
@@ -83,7 +87,9 @@ description
 
 			<div id="block_s" style="grid-area: L;">
 			<header id="h_s">Logo</header>
-			<img src="img/logo.png">
+			<p id="i_s">If you change the color scheme of the site, then I advise you to recolor the logo. ( click to img to download it )</p>
+			<a href="img/logo-large.png"><img src="img/logo-large.png" style="margin-bottom: 10px; width: 250px;"></a>
+			<a href="img/logo-small.png"><img src="img/logo-small.png" width="48px;"></a>
 			</div>			
 
 			<div id="block_s" style="grid-area: CP;">
@@ -108,10 +114,13 @@ description
         function List() {
     var y = document.getElementById("folder");
     var x = document.getElementById("List");
+    var x2 = document.getElementById("List2");
     if (x.style.display === "none") {
         x.style.display = "flex";
+        x2.style.display = "flex";
         y.innerHTML = "folder_open";
     } else {
+    	x2.style.display = "none";
         x.style.display = "none";
         y.innerHTML = "folder";
     }
