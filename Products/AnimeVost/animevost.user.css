@@ -1,0 +1,395 @@
+/* ==UserStyle==
+@name           AnimeVost
+@namespace      github.com/D1verlin
+@version        0.8.0
+@updateURL      https://d1verlin.github.io/My-Css-Styles/Products/AnimeVost/animevost.user.css
+@description    AnimeVost Rebuild
+@author         Diverlin
+@preprocessor stylus
+@var select Comments "Comments" ["Visible:Visible", "Invisible:Invisible"]
+==/UserStyle== */
+
+@-moz-document domain("animevost.org") {
+
+if Comments == Invisible {
+      #comment {
+        display:none;
+      }
+    } else if Comments == Visible {
+        #comment {
+        display:block;
+      }
+    }
+        
+    
+    div.headbgnewo {
+    height:55px !important;
+    }
+    div.headbgnewfour {
+    height:55px !important;
+    }
+    div.headbgnewthree {
+    height:55px !important;
+    }
+    div.headbgnew {
+    height:55px !important;
+    }
+    
+.menu {
+    outline: none !important;
+    position: static !important; 
+    top: 281px;
+    background: #2E2E2E !important;
+    border-radius: 10px;
+}
+    
+    .rss {
+    display:none !important;
+    }
+    .present {
+    display:none !important;
+    }
+    .menu ul#topnav li .sar {
+    bottom:0px;
+    top: 50px;
+    height: fit-content;
+    z-index: 3;
+    left: 300px;
+    background: rgb(46 46 46);
+    }
+    body {
+    background:#151515;
+    }
+    div.menu ul li a {
+    background:none !important;
+    transition:0.3s;
+    }
+    div.menu ul li a:hover {
+    text-decoration:none;
+    transform:scale(0.98);
+    }
+    
+    ul#topnav li .sar span a {
+    color: #cecece;
+    }
+    ul#topnav li .sar span a:hover {
+    color: #fff;
+    text-decoration:none !important;
+    }
+    div.topLine div.search form input.search {
+    background:#2E2E2E !important;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    }
+    div.topLine div.login span.loginLink {
+    background: #2E2E2E !important;
+    }
+    div.topLine div.login div.loginAva {
+    background: #2E2E2E !important;
+    }
+    div.topLine div.login a.loginExit {
+    background: #2E2E2E !important;
+    }
+    div#stext {
+    background: #2E2E2E !important;
+    border-radius: 8px;
+    }
+    div#stext div, div#stext div a {
+    text-shadow:none !important;
+    color:#fff;
+    }
+    div#stext div a:hover, div#stext div a:active {
+    color:#f5ce96;
+    text-decoration:none;
+    }
+    .interDub {
+    background:#151515 !important;
+    border:none !important;
+    }
+    .interDub p {
+    color:#fff !important;
+    font-weight:normal !important;
+    text-shadow:none !important;
+    }
+    .interDub a {
+    text-transform: none !important;
+    font-weight: normal !important;
+    color:#ff7d7d !important;
+    }
+    .interDub a:hover {
+    text-decoration:none;
+    transform:scale(0.98);
+    }
+    .interDubBgTwo a {
+    color:#fff !important;
+    }
+    .interDub div.interDubBgTwo {
+    background: #2e2e2e;
+    border: none !important;
+    border-radius: 10px;
+    position: relative;
+    }
+    div.interDubBgTwo h2 {
+    color:#fff;
+    text-shadow:none;
+    border-bottom:none;
+        background: #404040;
+    }
+    div.interDubBgTwo ul li {
+    border-bottom:none;
+    transition:0.3s;
+    }
+    div.interDubBgTwo ul li a {
+    border-bottom:none;
+    text-shadow:none;
+    }
+    div.interDubBgTwo ul li:hover {
+        background: #252525;
+    }
+    .interDubBgTwo b {
+    color:#fff !important;
+    border-bottom:none !important;
+    background:#404040;
+    border-radius:8px 8px 0 0;
+    }
+    .interDubBgTwo a {
+    background: #424242 !important;
+    }
+    .interDubBg {
+    display:none !important;
+    border:none !important;
+    }
+    div.imgOngoing img {
+    border-radius:5px;
+    background:#f5ce96 !important;
+    filter: none !important;
+    }
+    div.imgOngoing span {
+    background: rgba(245,206,150,0.7) !important;
+    }
+    div.topLine div.login form #login_name, div.topLine div.login form #login_password {
+    background: #2f2f2f;
+    color: #ffffff;
+}
+    div.topLine div.login form {
+    background:#404040 !important;
+    }
+    .shortstory {
+    background:#2e2e2e !important;
+    box-shadow:none !important;
+    }
+    div.staticInfo {
+    border:none !important;
+    }
+    div.staticInfo {
+    background:#2e2e2e !important;
+    }
+    .shortstory .shortstoryHead h2, .shortstory .shortstoryHead h1 {
+    border:none !important;
+    text-shadow:none !important;
+    background:none !important;
+    padding: 20px 57px 20px 20px;
+    }
+    .shortstory .shortstoryHead h2 a, .shortstory .shortstoryHead h1 a {
+    color:#f5ce96;
+    }
+    .shortstory .shortstoryHead h2 a, .shortstory .shortstoryHead h1 a:hover {
+    text-decoration:none;
+    color:#f7dab0;
+    }
+    .shortstoryContent {
+    border:none !important;
+    color: #d2d2d2;
+    }
+    .shortstoryContent a {
+    color:#f5ce96 !important;
+    }
+    .shortstoryContent a:hover {
+    text-decoration:none !important;
+    color:#f7dab0 !important;
+    }
+    .imgRadius {
+    box-shadow:none !important;
+    }
+    .unit-rating li a:hover {
+    background:#bbbbbb !important;
+    }
+    .unit-rating li.current-rating {
+    background: #8a8a8a;
+    }
+    .unit-rating {
+    background: #525252;
+    }
+    .shortstoryFuter {
+    border:none !important;
+    }
+    .shortstoryFuter span {
+    text-shadow:none !important;
+    color: #d2d2d2;
+    }
+    .shortstoryFuter a {
+    color:#f5ce96;
+    }
+    .shortstoryFuter a:hover {
+    text-decoration:none;
+    color:#f7dab0;
+    }
+    .shortstoryFuter form a {
+    border:none !important;
+    background:#f5ce96;
+    color:#2E2E2E;
+    }
+    .shortstoryContent h4 {
+    background: #525252 !important;
+    text-shadow: none !important;
+}
+    .scriptcode, .title_quote, .quote, .title_spoiler, .text_spoiler {
+    background: #3a3a3a;
+    border: none !important;
+    color:#fff;
+}
+    .title_spoiler img {
+    display:none;
+    }
+    .shortstoryFuter form a:hover {
+    background:#f7dab0 !important;
+    color:#000;
+    }
+    
+    #futer {
+    border: none;
+    background: #2e2e2e;
+    }
+    #futer #copyr ul li,#futer #copyr li a {
+    color:#f5ce96;
+    }
+    #futer #copyr ul li,#futer #copyr li a:hover {
+    text-decoration:none;
+    color:#f7dab0;
+    }
+    
+    #futer #copyr div#copyrText {
+    color: #cacaca !important;
+    text-align: justify;
+}
+    #copyrText a {
+    color:#f5ce96 !important;
+    }
+    #copyrText a:hover {
+    text-decoration:none;
+    color:#f7dab0;
+    }
+    #copyrText span {
+    color: #ff9797 !important;
+    }
+    .block_4 a {
+    background: #f5ce96;
+    box-shadow: none;
+    color: #151515;
+}
+    .block_4 a:hover {
+    background:#f7dab0;
+    text-decoration:none;
+    }
+    .block_4 span {
+    background: #f7dab0;
+    box-shadow: none;
+    color: #151515;
+    text-decoration:none;
+    cursor:not-allowed;
+}
+    div.topLine div.login span a {
+    color:#f5ce96 !important;
+    }
+    div.topLine div.login span a:hover {
+    text-decoration:none;
+    color:#f7dab0;
+    }
+    .shortstory .shortstoryHead h2, .shortstory .shortstoryHead h1 {
+    color:#f5ce96 !important;
+    }
+    #nexttime {
+    background: #f7dab0;
+    color: #2e2e2e;
+    }
+    fieldset.skrin {
+    border: 1px solid #f7dab0;
+    }
+    fieldset.skrin legend {
+    color: #f7dab0;
+    }
+    .shortstoryContent #spoiler, .shortstoryContent #buttonLike, .shortstoryContent #shortstoryContentTegi {
+    border:none;
+    background: #f7dab0;
+    font-size:14px;
+    }
+    #stdplayer {
+    border-left: 1px solid #f7dab0;
+    }
+    a.prev {
+    background:#f7dab0;
+    }
+a.prev:before {
+    content: '<';
+    font-size: 16px;
+    color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 22%;
+    justify-content: center;
+}
+    .active {
+    background: #ffc87a !important;
+    color: #2e2e2e;
+}
+.epizode {
+    background: #fdd9a6;
+    border:none;
+    color: #2e2e2e;
+    cursor: pointer;
+    float: left;
+    font-size: 13px;
+    height: 28px;
+    padding-top: 10px;
+    text-align: center;
+    width: 102px;
+}
+    a.next {
+    background:#f7dab0;
+    }
+    a.next:before {
+    content: '>';
+    font-size: 16px;
+    color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 22%;
+    justify-content: center;
+}
+    .shortstoryContent #shortstoryContentTegi, #shortstoryContentTegi a {
+    color: #3d3d3d !important;
+    }
+    div.miniInfo {
+    background: rgb(255 112 112);
+    color: #2e2e2e; 
+    }
+    .userinfo {
+    background: #3a3a3a;
+    border:none;
+    border-radius:8px;
+    }
+    #newComment p, .userinfoHead {
+    color: #f7dab0;
+    border-bottom: 1px solid #f7dab0;
+    }
+    .userinfoCenter {
+    color:#d2d2d2;
+    
+}
+}
