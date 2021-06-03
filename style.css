@@ -199,8 +199,8 @@ a {
 	transform: translate(-50%, -50%);
 	background-color: var(--secondry-bg);
 	padding: 15px;
-	width: 260px;
-	height: 337px;
+  width: 25%;
+  height: fit-content;
 	border-radius: 0.5rem;
 }
 
@@ -238,6 +238,8 @@ a {
 
 .modal-content h1 {
 	color: #fff;
+	display: flex;
+	align-items: center;
 }
 
 p {
@@ -262,10 +264,16 @@ p span {
 	font-style: normal;
 	font-weight: 500;
 	font-size: 20px;
-
 	letter-spacing: 0.02em;
-
 	color: #FFFFFF;
+	display: flex;
+	align-items: center;
+}
+
+.header_s svg {
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
 }
 
 .modal_m {
@@ -312,28 +320,86 @@ span {
 	font-size: 18px;
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  font-family: Google Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 80%;
-  line-height: 23px;
-  color: #646464;
-  text-align: center;
-  cursor: default;
+
+h1 svg {
+	width: 28px;
+	height: 28px;
+	margin-right: 5px;
 }
 
-footer a {
-	color: #646464;
-	transition: 0.3s;
-	text-decoration: underline;
-	cursor: pointer;
+.Author a {
+	color: var(--font-static);
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    transition: 0.3s;
 }
 
-footer a:hover {
-	color: #fff;
+.Author a svg {
+	font-size: 23px;
+}
+
+.Author a:hover {
+	transform: scale(0.98);
+	color: var(--font-hover);
+	background: linear-gradient(106.49deg, rgba(255, 204, 142, 0.1) 21.01%, rgba(0, 0, 0, 0.1) 146.83%);
+}
+
+.Author {
+	    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+#list_icon {
+	width: 32px;
+    height: 32px;
+    font-size: 32px;
+    color: #fff;
+    border: 1px solid #FFFFFF1A;
+    background: #0000001A;
+    padding: 9px;
+    border-radius: 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+	main {
+    margin-top: 20px;
+}
+
+header {
+    flex-direction: row;
+    margin: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list {
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(4, 70px);
+    margin: 15px;
+}
+
+body {
+    flex-direction: column;
+}
+
+header h1 {
+	font-size: 32px;
+}
+
+.modal-content {
+	   width: 70%;
+}
+  
 }

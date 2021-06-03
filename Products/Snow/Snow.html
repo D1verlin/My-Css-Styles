@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>MCS | Animevost</title>
+	<title>MCS | Snow</title>
 	<link rel="stylesheet" type="text/css" href="../all.css">
 	<link rel="stylesheet" type="text/css" href="Grid.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../../Fonts/font.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
@@ -20,16 +20,16 @@
 <aside>
 	<div class="box" id="info">
 		<header>
-			<img src="https://animevost.org/favicon-32x32.png"> <h1>Animevost</h1>
+			<span id="info_icon" class="material-icons">ac_unit</span> <h1>Snow</h1>
 		</header>
 		<div class="info_block">
 			<div>
 						<p>Data of
-Creation:</p><p id="date">19.05.2021</p>
+Creation:</p><p id="date">03.06.2021</p>
 			</div>
 <div>
 			<p>Used on
-Site:</p><p id="date">animevost.org</p>
+Site:</p><p id="date">All Site</p>
 </div>
 
 </div>
@@ -47,9 +47,9 @@ Site:</p><p id="date">animevost.org</p>
 			 <h1>Other styles</h1>
 		</header>
 		<div class="other_list">
-		<a href="../Snow/Snow.html" class="button_b" id="b_anim">Snow</a>
 		<a href="../YummyAnime/YummyAnime.html" class="button_b" id="b_anim">YA</a>
-		<a href="../MangaLib/MangaLib.html" class="button_b" id="b_anim">ML</a>
+		<a href="../MangaLib/MangaLib.html" class="button_b" id="b_anim">MangaLib</a>
+		<a href="../AnimeVost/Animevost.html" class="button_b" id="b_anim">AV</a>
 		</div>
 	</div>
 	</aside>
@@ -59,9 +59,21 @@ Site:</p><p id="date">animevost.org</p>
 			 <h1>Files</h1>
 		</header>
 		<ul>
+			<li onclick="List()" style="cursor: pointer;"><span class="material-icons" id="folder">
+folder_open
+</span>img</li>
+			<li class="inside_folder" id="List"><span class="material-icons">
+image
+</span>snow_1.png</li>
+<li class="inside_folder" id="List2"><span class="material-icons">
+image
+</span>snow_2.png</li>
+<li class="inside_folder" id="List3"><span class="material-icons">
+image
+</span>snow_3.png</li>
 			<li><span class="material-icons">
 description
-</span>animevost.user.css</li>
+</span>Snow.user.css</li>
 		</ul>
 	</div>
 
@@ -73,19 +85,13 @@ description
 		<div class="changes_container">
 			<div id="block_s" style="grid-area: B;">
 			<header id="h_s">Briefly</header>
-			<p id="i_s">| Color Palette</p>
-			<p id="i_s">| Disable some blocks</p>
+			<p id="i_s">| Background</p>
 			</div>
 
-			<div id="block_s"  style="grid-area: L; background: var(--red);">
-			<header id="h_s">Attention!</header>
-			<p id="i_s">This version is in beta and has bugs and shortcomings, take this into consideration</p>
+			<div id="block_s" style="grid-area: L;">
+			<header id="h_s">About</header>
+			<p id="i_s">With the help of this css code, an animation of falling snow will appear on the background of almost any site</p>
 			</div>			
-
-			<div id="block_s" style="grid-area: CP;">
-			<header id="h_s">Comments</header>
-			<p id="i_s">You don't want to see comments? The fix is easy, go to the style settings and hide them</p>
-			</div>	
 
 		</div>
 	</div>
@@ -104,11 +110,17 @@ description
         function List() {
     var y = document.getElementById("folder");
     var x = document.getElementById("List");
+    var x2 = document.getElementById("List2");
+    var x3 = document.getElementById("List3");
     if (x.style.display === "none") {
         x.style.display = "flex";
+        x2.style.display = "flex";
+        x3.style.display = "flex";
         y.innerHTML = "folder_open";
     } else {
         x.style.display = "none";
+        x2.style.display = "none";
+        x3.style.display = "none";
         y.innerHTML = "folder";
     }
 }

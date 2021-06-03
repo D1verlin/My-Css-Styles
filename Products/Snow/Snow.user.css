@@ -1,0 +1,56 @@
+/* ==UserStyle==
+@name           Snow
+@namespace      github.com/D1verlin
+@version        1.0.0
+@updateURL      https://d1verlin.github.io/My-Css-Styles/Products/Snow/Snow.user.css
+@description    Snow for all sites
+@author         Diverlin
+==/UserStyle== */
+
+@-moz-document domain("example.com") {
+    body:after {
+	 content: '';
+    top: 0;
+    background: url(https://diverlin.tk/snow/snow_1.png) fixed,url(https://diverlin.tk/snow/snow_2.png) fixed,url(https://diverlin.tk/snow/snow_3.png) fixed;
+    -webkit-animation: animation-snow 10s linear infinite;
+    -moz-animation: animation-snow 10s linear infinite;
+    -ms-animation: animation-snow 10s linear infinite;
+    animation: animation-snow 10s linear infinite;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .08
+}
+
+@-webkit-keyframes animation-snow {
+    from {
+        background-position: 0 0,0 0,0 0
+    }
+
+    to {
+        background-position: 500px 500px,400px 400px,300px 300px
+    }
+}
+
+@-moz-keyframes animation-snow {
+    from {
+        background-position: 0 0,0 0,0 0
+    }
+
+    to {
+        background-position: 500px 500px,400px 400px,300px 300px
+    }
+}
+
+@keyframes animation-snow {
+    from {
+        background-position: 0 0,0 0,0 0
+    }
+
+    to {
+        background-position: 500px 500px,400px 400px,300px 300px
+    }
+}
+	
+}

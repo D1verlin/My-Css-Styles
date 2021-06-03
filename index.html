@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>M.C.S | Hub</title>
+  <title>MCS | Hub</title>
   <link rel="stylesheet" type="text/css" href="Fonts/font.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
       <link
@@ -16,19 +18,24 @@
     <div id="myModal" class="modal">
         <div class="modal-content">
         	<header>
-        		<h1>Info</h1>
+        		<h1><span class="iconify" data-icon="twemoji:information" data-inline="false"></span>Info</h1>
         		<span class="close">&times;</span>
         	</header>
         	<nav class="modal_m">
         		<p><span>First</span> , we need to install the Stylish plugin for your browser or any other injector that can embed your css files.</p>
-        		<span class="header_s">Stylus</span>
+        		<span class="header_s"><span class="iconify" data-icon="twemoji:orange-book" data-inline="false"></span>Stylus</span>
         		<div class="links">
         			<a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne">Chrome </a>
         			<a href="https://addons.mozilla.org/ru/firefox/addon/styl-us/">Firefox </a>
         			<a href="https://addons.opera.com/ru/extensions/details/stylus/">Opera </a>
         		</div>
         		<p><span>Next</span>, you need to select from the list on the main page what you want to install.</p>
+                        <div class="Author">
+              <p><span>Link for my site</span></p>
+              <a href="https://diverlin.tk/"><span class="iconify" data-icon="dashicons:admin-site" data-inline="false"></span></a>
+            </div>
             </nav>
+
         </div>
     </div>
   	<div class="preloader">
@@ -64,11 +71,16 @@ info
   	  		</div>
   	  	</a>
   	
+          <a href="Products/Snow/Snow.html" class="animate__animated animate__fadeInUp">
+    <div id="button">
+     <span id="list_icon" class="material-icons">ac_unit</span>
+      <p>Snow</p>            
+          </div>
+        </a>
 
   	<!-- list end. -->
   </div>
   </main>
-  <footer>Copyright &#169; 2020-2021 - <a href="https://diverlin.tk/">Diverlin</a> - All right reserved</footer>
     <script>
     window.onload = function () {
       document.body.classList.add('loaded_hiding');

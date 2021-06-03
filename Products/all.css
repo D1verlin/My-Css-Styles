@@ -76,7 +76,7 @@ body {
 	grid-area: i;
 }
 
-#download {
+#install {
 	grid-area: d;
 }
 
@@ -147,6 +147,7 @@ p {
 	display: flex;
 	margin-left: 20px;
 	margin-top: 15px;
+	justify-content: space-between;
 }
 
 .button {
@@ -175,8 +176,7 @@ a {
     font-family: 'Google Sans';
     font-size: 20px;
     display: flex;
-    width: 260px;
-    height: 50px;
+    padding: 15px;
     align-items: center;
     justify-content: center;
     margin:20px;
@@ -298,4 +298,100 @@ li span {
 
 #block_s img:hover {
 	background: linear-gradient(106.49deg, rgba(255, 204, 142, 0.1) 21.01%, rgba(0, 0, 0, 0.1) 146.83%);
+}
+
+#info_icon {
+	margin-right: 10px;
+	font-size: 32px;
+	color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		display: flex;
+		justify-content: center;
+	}
+  
+  .container {
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: 630px;
+    grid-gap: 20px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+	aside {
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: 235px 177px 177px;
+    grid-template-areas:
+        "i"
+        "d"
+        "l";
+    justify-content: center;
+    grid-gap: 20px;
+}
+
+	header {
+    display: inline-flex;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 15px;
+}
+
+	.info_block {
+    display: flex;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 15px;
+}
+
+	#Ib {
+		display: flex;
+    flex-direction: row;
+    justify-content: center;
+	}
+
+	.button {
+		margin: 0px;
+	}
+
+	.button_s {
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+	.other_list {
+    display: flex;
+    margin-top: 0;
+    justify-content: space-evenly;
+}
+
+	#files {
+    height: fit-content;
+}
+
+	ul {
+    list-style: none;
+    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+	.changes_container {
+		padding: 0 !important;
+    padding-left: 15px !important;
+    padding-top: 0;
+    padding-right: 15px !important;
+    padding-bottom: 15px !important;
+	}
+
+	#h_s {
+		padding: 0 !important;
+	}
+
 }
