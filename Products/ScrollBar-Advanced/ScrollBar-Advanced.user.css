@@ -1,0 +1,37 @@
+/* ==UserStyle==
+@name           Scrollbar Advanced
+@namespace      github.com/D1verlin
+@version        1.0.0
+@description    Customize your ScrollBar
+@updateURL      https://d1verlin.github.io/My-Css-Styles/Products/ScrollBar-Advanced/ScrollBar-Advanced.user.css
+@author         Diverlin
+@preprocessor stylus 
+@var color TrackColor "Track Color" #161616
+@var color HandleColor "Handle Color" #2d2d2d
+@var color HandleHover "Handle Hover" #5b5b5b
+@var text HandleRadius "Border Radius Handle" 46px
+@var text ScrollbarWidth "ScrollBar Width" 7px
+==/UserStyle== */
+
+	
+    /* width */
+	::-webkit-scrollbar {
+    width: ScrollbarWidth;
+}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+    background: TrackColor;
+}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+    background: HandleColor;
+    border-radius: HandleRadius;
+}
+
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+    background: HandleHover;
+}
