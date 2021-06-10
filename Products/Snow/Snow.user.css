@@ -1,13 +1,13 @@
 /* ==UserStyle==
 @name           Snow
 @namespace      github.com/D1verlin
-@version        1.0.0
+@version        1.0.1
 @updateURL      https://d1verlin.github.io/My-Css-Styles/Products/Snow/Snow.user.css
 @description    Snow for all sites
 @author         Diverlin
 ==/UserStyle== */
 
-@-moz-document domain("example.com") {
+
     body:after {
 	 content: '';
     top: 0;
@@ -53,4 +53,3 @@
     }
 }
 	
-}
