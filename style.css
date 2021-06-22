@@ -358,6 +358,12 @@ h1 svg {
     gap: 5px;
 }
 
+.Box {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+}
+
 #list_icon {
 	width: 32px;
     height: 32px;
