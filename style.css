@@ -6,6 +6,24 @@
 	--font-static:rgba(255, 255, 255, 0.5);
 }
 
+    /* width */
+    ::-webkit-scrollbar {
+    width: 7px;
+}
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #2d2d2d;
+    border-radius: 46px;
+}
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #5b5b5b;
+}
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: #151515;
+}
+
 .preloader {
   /*фиксированное позиционирование*/
   position: fixed;
@@ -116,7 +134,7 @@ header h1 {
 .list {
 	display: grid;
     grid-template-columns: repeat(3, 250px);
-    grid-template-rows: repeat(7, 70px);
+    grid-template-rows: repeat(6, 70px);
 	grid-column-gap: 10px;
 	grid-row-gap: 10px;
 	margin: 20px;
