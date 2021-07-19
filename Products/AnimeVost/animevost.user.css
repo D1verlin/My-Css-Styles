@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           AnimeVost
 @namespace      github.com/D1verlin
-@version        0.8.1
+@version        0.8.2
 @updateURL      https://d1verlin.github.io/My-Css-Styles/Products/AnimeVost/animevost.user.css
 @description    AnimeVost Rebuild
 @author         Diverlin
@@ -123,6 +123,7 @@ if Comments == Invisible {
     .interDub a:hover {
     text-decoration:none;
     transform:scale(0.98);
+    z-index: 200;
     }
     .interDubBgTwo a {
     color:#fff !important;
