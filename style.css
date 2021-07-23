@@ -2,8 +2,8 @@
 	--bg:#151515;
 	--secondry-bg:#232323;
 	--font-primary:#FFCC8E;
-	--font-hover:#fff;
-	--font-static:rgba(255, 255, 255, 0.5);
+	--font-static:#fff;
+	--font-static:#fff;
 }
 
     /* width */
@@ -94,19 +94,24 @@ main {
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-sizing: border-box;
     border-radius: 5px;
-    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 15px;
 }
 
 #bar-elem {
-	color: var(--font-hover);
+	color: var(--font-static);
 	font-size: 32px;
 	transition: 0.3s;
 	cursor: pointer;
-	opacity: 50%;
 }
 
 #bar-set {
-	color: var(--font-hover);
+	color: var(--font-static);
 	font-size: 32px;
 	transition: 0.3s;
 	cursor: pointer;
@@ -119,7 +124,7 @@ main {
 
 
 #bar-elem:hover {
-	opacity: 100%;
+	color: var(--font-primary);
 }
 
 header h1 {
@@ -152,12 +157,15 @@ header h1 {
     transition: 0.3s;
     height: 100%;
     width: 100%;
-    color: var(--font-static);
+    
+}
+
+#button p {
+	color: var(--font-static);
 }
 
 #button:hover {
 	transform: scale(0.98);
-	color: var(--font-hover);
 	background: linear-gradient(106.49deg, rgba(255, 204, 142, 0.1) 21.01%, rgba(0, 0, 0, 0.1) 146.83%);
 }
 
@@ -239,7 +247,6 @@ a {
 }
 .close:hover {
 	transform: scale(0.98);
-	color: var(--font-hover);
 	background: linear-gradient(106.49deg, rgba(255, 204, 142, 0.1) 21.01%, rgba(0, 0, 0, 0.1) 146.83%);
 }
 .show-modal {
@@ -266,7 +273,7 @@ p {
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 20px;
-	color:#DBDBDB;
+	color: #DBDBDB;
 
 }
 
@@ -363,7 +370,7 @@ h1 svg {
 
 .Author a:hover {
 	transform: scale(0.98);
-	color: var(--font-hover);
+	color: var(--font-static);
 	background: linear-gradient(106.49deg, rgba(255, 204, 142, 0.1) 21.01%, rgba(0, 0, 0, 0.1) 146.83%);
 }
 
