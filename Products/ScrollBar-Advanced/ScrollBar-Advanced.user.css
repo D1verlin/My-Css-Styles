@@ -1,47 +1,107 @@
 /* ==UserStyle==
 @name           Scrollbar Advanced
 @namespace      github.com/D1verlin
-@version        1.1.0
+@version        2.1.8
 @description    Customize your ScrollBar
 @updateURL      https://d1verlin.github.io/My-Css-Styles/Products/ScrollBar-Advanced/ScrollBar-Advanced.user.css
 @author         Diverlin
+@license     	MIT License
 @preprocessor stylus 
+@var select stylus-deepdark-style "Preset themes" [
+  "Default",
+  "Deep-Dark",
+  "Green-Plain",
+  "Light-Red",
+  "Desert",
+  "Tradewind",
+  "Hippie-Blue",
+  "Purple",
+  "Custom"
+  ]
 @var color TrackColor "Track Color" #161616
 @var color HandleColor "Handle Color" #2d2d2d
 @var color HandleHover "Handle Hover" #5b5b5b
 @var text HandleRadius "Border Radius Handle" 46px
 @var text ScrollbarWidth "ScrollBar Width" 7px
 @var select TransparentTrack "Transparent Track" ["Visible","Invisible"]
+
 ==/UserStyle== */
-	if TransparentTrack == Invisible {
-		/* Track */
-	::-webkit-scrollbar-track {
-    background: transparent;
-}
-}else if TransparentTrack == Visible {
-		/* Track */
-	::-webkit-scrollbar-track {
-    background: TrackColor;
-}
-}
+:root {
 	
-	
-    /* width */
+	if stylus-deepdark-style=="Default" {
+		--Track-Color:#161616;
+		--HandleColor:#2d2d2d;
+		--HandleHover:#5b5b5b;
+	}
+	else if stylus-deepdark-style=="Deep-Dark" {
+		--Track-Color:#232846;
+		--HandleColor:#383779;
+		--HandleHover:#4358a6;	
+	}
+	else if stylus-deepdark-style=="Green-Plain" {
+		--Track-Color: #345d38;
+		--HandleColor: #5dab6a;
+		--HandleHover: #6eb565;
+	}
+	else if stylus-deepdark-style=="Light-Red" {
+		--Track-Color: #5d3434;
+		--HandleColor: #ab5d5d;
+		--HandleHover: #b56565;
+	}
+	else if stylus-deepdark-style=="Desert" {
+		--Track-Color: #5d4834;
+		--HandleColor: #ab805d;
+		--HandleHover: #b59165;
+	}
+	else if stylus-deepdark-style=="Tradewind" {
+		--Track-Color: #345d4d;
+		--HandleColor: #5dab8a;
+		--HandleHover: #65b5a5;
+	}
+	else if stylus-deepdark-style=="Hippie-Blue" {
+		--Track-Color: #344c5d;
+		--HandleColor: #5d7dab;
+		--HandleHover: #658db5;
+	}
+	else if stylus-deepdark-style=="Purple" {
+		--Track-Color: #45345d;
+		--HandleColor: #8c5dab;
+		--HandleHover: #9565b5;
+	}
+	else if stylus-deepdark-style=="Custom" {
+		--Track-Color:TrackColor;
+		--HandleColor:HandleColor;
+		--HandleHover:HandleHover;	
+	}	
+}
+	if TransparentTrack==Invisible {
+		/* Track */
+		::-webkit-scrollbar-track {
+			background: transparent;
+		}
+	}
+	else if TransparentTrack==Visible {
+		/* Track */
+		::-webkit-scrollbar-track {
+			background: var(--Track-Color);
+		}
+	}
+
+
+	/* width */
 	::-webkit-scrollbar {
-    width: ScrollbarWidth;
-}
+		width: ScrollbarWidth;
+	}
 
 
 
 	/* Handle */
 	::-webkit-scrollbar-thumb {
-    background: HandleColor;
-    border-radius: HandleRadius;
-}
-
+		background: var(--HandleColor);
+		border-radius: HandleRadius;
+	}
 
 	/* Handle on hover */
 	::-webkit-scrollbar-thumb:hover {
-    background: HandleHover;
-}
-
+		background: var(--HandleHover);
+	}
