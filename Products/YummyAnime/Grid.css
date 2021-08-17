@@ -6,3 +6,11 @@
     "B CP"
     "L L";
 }
+
+aside {
+    grid-template-columns: 335px;
+}
+
+.container {
+    grid-template-columns: 335px 480px;
+}

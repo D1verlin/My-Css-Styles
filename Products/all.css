@@ -1,9 +1,12 @@
 :root {
-	--bg:#151515;
+	--bg:#1E242E;
 	--font-primary:#FFCC8E;
 	--font-hover:#fff;
 	--font-static:#EBEBEB;
-	--bg-secondry:#232323;
+	--bg-secondry:#181D25;
+	--button-text: #FFCC8E;
+	--button-text-hover: #181D25;
+	--button-hover: #FFCC8E;
 	--font-header: #fff;
 	--red:rgb(253 137 137 / 10%);
 }
@@ -60,7 +63,7 @@ body {
 
 .container {
 	display: grid;
-	grid-template-columns: 300px 300px 480px;
+	grid-template-columns: 320px 480px;
     grid-template-rows: 630px;
     grid-gap: 20px;
     padding-top: 20px;
@@ -68,7 +71,7 @@ body {
 
 .box {
 	background: var(--bg-secondry);
-	border: 1px solid #FFFFFF1A;
+	border: 2px solid #343A43;
 	border-radius: 15px;
 }
 
@@ -90,7 +93,7 @@ body {
 
 aside {
 	display: grid;
-	grid-template-columns: 300px;
+	grid-template-columns: 320px;
     grid-template-rows: 235px 177px 177px;
     grid-template-areas: 
     "i f"
@@ -112,7 +115,7 @@ header {
 
 header h1 {
 	color: var(--font-header);
-	font-family: Google Sans;
+	font-family: 'Geometria',sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 26px;
@@ -125,7 +128,7 @@ header img {
 }
 
 p {
-	font-family: Google Sans;
+	font-family: 'Geometria',sans-serif;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 24px;
@@ -136,7 +139,7 @@ p {
 
 #date {
 	color: var(--font-primary);
-	font-family: Google Sans;
+	font-family: 'Geometria',sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
@@ -146,15 +149,16 @@ p {
 .info_block {
 	display: flex;
 	margin-left: 20px;
+	margin-right: 20px;
 	margin-top: 15px;
 	justify-content: space-between;
 }
 
 .button {
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid #343A43;
     border-radius: 10px;
-    color: var(--font-static);
-    font-family: 'Google Sans';
+    color: var(--button-text);
+    font-family:'Geometria',sans-serif;
     font-size: 18px;
     display: flex;
     width: 260px;
@@ -170,10 +174,10 @@ a {
 }
 
 .button_s {
-	    border: 1px solid rgba(255, 255, 255, 0.1);
+	    border: 2px solid #343A43;
     border-radius: 10px;
-    color: var(--font-static);
-    font-family: 'Google Sans';
+    color: var(--button-text);
+    font-family: 'Geometria',sans-serif;
     font-size: 20px;
     display: flex;
     padding: 15px;
@@ -183,8 +187,8 @@ a {
 }
 
 .button_b {
-    color: var(--font-static);
-    font-family: 'Google Sans';
+    color: var(--button-text);
+    font-family: 'Geometria',sans-serif;
     font-size: 100%;
     display: flex;
     width: 80px;
@@ -203,9 +207,9 @@ a {
 }
 
 #b_anim:hover {
-	transform: scale(0.98);
-	color: var(--font-hover);
-	background: linear-gradient(106.49deg, rgba(255, 204, 142, 0.1) 21.01%, rgba(0, 0, 0, 0.1) 146.83%);
+	color: var(--button-text-hover);
+	background: var(--button-hover);
+	border: 2px solid var(--button-hover);
 }
 
 #b_anim {
@@ -228,7 +232,7 @@ ul {
 
 li {
 	color: var(--font-static);
-	font-family: Google Sans;
+	font-family: 'Geometria',sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 20px;
@@ -242,7 +246,7 @@ li span {
 }
 
 #h_s {
-	font-family: Google Sans;
+	font-family: 'Geometria',sans-serif;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 20px;
@@ -269,8 +273,8 @@ li span {
 }
 
 #block_s {
-	background: rgba(0, 0, 0, 0.1);
-	border: 1px solid rgba(255, 255, 255, 0.1);
+	background: var(--bg-secondry);
+	border: 2px solid #343A43;
 	border-radius: 10px;
 	padding: 10px;
 	width: fit-content;
@@ -286,7 +290,7 @@ li span {
 
 #block_s img {
 	background: rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid #343A43;
     border-radius: 10px;
     padding: 5px;
     transition: 0.3s;
@@ -297,13 +301,21 @@ li span {
 }
 
 #block_s img:hover {
-	background: linear-gradient(106.49deg, rgba(255, 204, 142, 0.1) 21.01%, rgba(0, 0, 0, 0.1) 146.83%);
+		color: var(--button-text-hover);
+	
+	border: 2px solid var(--button-hover);
 }
 
 #info_icon {
 	margin-right: 10px;
 	font-size: 32px;
 	color: #fff;
+}
+
+#Ib {
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -314,7 +326,7 @@ li span {
   
   .container {
     display: grid;
-    grid-template-columns: 350px;
+    grid-template-columns: 350px !important;
     grid-template-rows: 630px;
     grid-gap: 20px;
     justify-content: center;

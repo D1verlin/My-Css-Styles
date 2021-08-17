@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
+<head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4MS5QMJJL"></script>
 <script>
@@ -11,11 +12,12 @@
   gtag('config', 'G-B4MS5QMJJL');
 </script>
   <title>MCS | Hub</title>
-  <link rel="stylesheet" type="text/css" href="Fonts/font.css">
+  <link rel="stylesheet" type="text/css" href="Fonts/GeometriaFont.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
       <link
@@ -23,84 +25,136 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
   </head>
-  <body>
-    <div id="myModal" class="modal">
+<body>
+	    <div id="myModal" class="modal">
         <div class="modal-content">
-        	<header>
-        		<h1><span class="iconify" data-icon="twemoji:information" data-inline="false"></span>Info</h1>
-        		<span class="close">&times;</span>
-        	</header>
-        	<nav class="modal_m">
-        		<p><span>Firstly</span> , we need to install Stylish plug-in for your browser, or an alternative to this plugin.</p>
-        		<span class="header_s"><span class="iconify" data-icon="twemoji:orange-book" data-inline="false"></span>Stylus</span>
-        		<div class="links">
-        			<a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne">Chrome </a>
-        			<a href="https://addons.mozilla.org/ru/firefox/addon/styl-us/">Firefox </a>
-        			<a href="https://addons.opera.com/ru/extensions/details/stylus/">Opera </a>
-        		</div>
-        		<p><span>Next</span>, you need to select from the list on the main page what you want to install.</p>
-                        <div class="Author">
-              <p><span>Links</span></p>
-              <div class="Box">
-              <a href="https://diverlin.tk/"><span class="iconify" data-icon="dashicons:admin-site" data-inline="false"></span></a>
-              <a href="https://github.com/D1verlin/My-Css-Styles"><span class="iconify" data-icon="akar-icons:github-fill" data-inline="false"></span></span></a>
-              </div>
+          <header>
+            <h2>My Css Styles</h2>
+            <p>My Collection of custom css styles for the Stylish plugin
+            </p>
+          </header>
+          <div class="guide">
+            <h2>Usage Guide</h2>
+            <p>Firstly, we need to install Stylish plug-in for your browser, or an <a target="_blank" href="https://github.com/openstyles/stylus/wiki/Stylish-alternatives"> alternative</a> to this plugin.</p>
+            <div class="links">
+              <h3>Stylus</h3>
+              <ul>
+                <li><a target="_blank" href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne">Chrome</a></li>
+                <li><a target="_blank" href="https://addons.mozilla.org/ru/firefox/addon/styl-us/">Firefox</a></li>
+                <li><a target="_blank" href="https://addons.opera.com/ru/extensions/details/stylus/">Opera</a></li>
+              </ul>
             </div>
-            </nav>
+            <p>Next, you need to select from the list on the current page what you want to install.</p>
+          </div>
+        		
 
         </div>
     </div>
   	<div class="preloader">
   <div class="preloader__row">
   </div>
-</div>
-  	<main id="background">
-  <header class="animate__animated animate__fadeInDown">
-  	<h1>My Css Styles</h1>
-  	<nav class="bar">
-<a id="myBtn"><span class="material-icons" id="bar-elem">
-info
-</span></a>
-  	</nav>
-  </header>
-  <div class="list">
-  	<a href="Products/MangaLib/MangaLib.html" class="animate__animated animate__fadeInUp">
-  	<div id="button">
-  		<img src="https://mangalib.me/icons/favicon-32x32.png">
-  		<p>MangaLib</p>
-  	</div></a>
-  	
-  	  	<a href="Products/YummyAnime/YummyAnime.html" class="animate__animated animate__fadeInUp">
-  	  		<div id="button">
-  	 <img src="Products/YummyAnime/img/yummy-32.png">
-      <p>YummyAnime</p>
-  	  		</div>
-  	  	</a>
-	  	<a href="Products/AnimeVost/Animevost.html" class="animate__animated animate__fadeInUp">
-		<div id="button">
-     <img src="https://animevost.org/favicon-32x32.png">
-      <p>Animevost</p>  	  			
-  	  		</div>
-  	  	</a>
-  	
-          <a href="Products/Snow/Snow.html" class="animate__animated animate__fadeInUp">
-    <div id="button">
-     <span id="list_icon" class="material-icons">ac_unit</span>
-      <p>Snow</p>            
-          </div>
-        </a>
+<header>
+  <div class="group">
+	<h1>My Css Styles</h1>
+  <div class="footer">
+  <h3>MIT license</h3>
+  <a href="https://diverlin.tk">by @diverlin</a>
 
-          <a href="Products/ScrollBar-Advanced/ScrollBar-Advanced.html" class="animate__animated animate__fadeInUp">
-    <div id="button">
-     <span id="list_icon" class="iconify" data-icon="mdi:mouse-move-vertical" data-inline="false"></span>
-      <p>ScrollBar Advanced</p>            
-          </div>
-        </a>
+</div></div>
+	<button id="modal-btn" class="header-btn">
+		<span id="toggle-btn"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512">
+<path id="svgedit" d="M256 64C150 64 64 150 64 256s86 192 192 192s192-86 192-192S362 64 256 64zm-6 304a20 20 0 1 1 20-20a20
+ 20 0 0 1-20 20zm33.44-102C267.23 276.88 265 286.85 265 296a14 14 0 0 1-28 0c0-21.91 10.08-39.33 30.82-53.26C287.1 229.8
+ 298 221.6 298 203.57c0-12.26-7-21.57-21.49-28.46c-3.41-1.62-11-3.2-20.34-3.09c-11.72.15-20.82
+ 2.95-27.83 8.59C215.12 191.25 214 202.83 214 203a14 14 0 1 1-28-1.35c.11-2.43 1.8-24.32 24.77-42.8c11.91-9.58 27.06-14.56 45-14.78c12.7-.15 24.63
+ 2 32.72 5.82C312.7 161.34 326 180.43 326 203.57c0 33.83-22.61 49.02-42.56 62.43z"
+ fill="currentColor"/></svg></span>
 
+	</button>
+</header>
+<div class="container">
+	
+<div class="filters">
 
-  	<!-- list end. -->
+  <div class="ui-group">
+    <div class="button-group js-radio-button-group">
+      <button id="button1" class="button" data-filter=".ColorPalette">Color Palette</button>
+      <button id="button2" class="button" data-filter=".Customization">Customization</button>
+      <button class="button" data-filter=".AllSite">All Site</button>
+      <button class="button" data-filter=".Beta">Beta</button>
+      <button class="button" data-filter=".Images">Images</button>
+    </div>
   </div>
-  </main>
+
+</div>
+
+<div class="grid">
+  <a href="Products/MangaLib/MangaLib.html" class="block ColorPalette Customization Images">
+    <nav class="info">
+      <div class="header"><h2>MangaLib</h2><img src="https://mangalib.me/icons/favicon-32x32.png"></div>
+      <div class="description"><p>19.08.2020</p><h3>mangalib.me</h3></div>
+    </nav>
+    <nav class="tags">
+      <div class="tag">Color Palette</div>
+      <div class="tag">Customization</div>
+      <div class="tag">Images</div>
+    </nav>
+  </a>
+
+    <a href="Products/YummyAnime/YummyAnime.html" class="block ColorPalette Customization Images">
+    <nav class="info">
+      <div class="header"><h2>YummyAnime</h2><img src="Products/YummyAnime/img/yummy-32.png"></div>
+      <div class="description"><p>09.05.2021</p><h3>yummyanime.club</h3></div>
+    </nav>
+    <nav class="tags">
+      <div class="tag">Color Palette</div>
+      <div class="tag">Customization</div>
+      <div class="tag">Images</div>
+    </nav>
+  </a>
+
+    <a href="Products/Animevost/Animevost.html" class="block ColorPalette Beta">
+    <nav class="info">
+      <div class="header"><h2>Animevost</h2><img src="https://animevost.org/favicon-32x32.png"></div>
+      <div class="description"><p>19.05.2021</p><h3>animevost.org</h3></div>
+    </nav>
+    <nav class="tags">
+      <div class="tag">Color Palette</div>
+      <div class="tag">Beta</div>
+    </nav>
+  </a>
+
+    <a href="Products/Snow/Snow.html" class="block AllSite Images">
+    <nav class="info">
+      <div class="header"><h2>Snow</h2><span id="list_icon" class="material-icons">ac_unit</span></div>
+      <div class="description"><p>03.06.2021</p><h3>All Site</h3></div>
+    </nav>
+    <nav class="tags">
+      <div class="tag">All Site</div>
+      <div class="tag">Images</div>
+    </nav>
+  </a>
+
+    <a href="Products/ScrollBar-Advanced/ScrollBar-Advanced.html" class="block ColorPalette Customization AllSite">
+    <nav class="info">
+      <div class="header"><h2>ScrollBar Advanced</h2><span id="list_icon" class="iconify" data-icon="ic:round-ads-click"></span></div>
+      <div class="description"><p>10.06.2021</p><h3>All Site</h3></div>
+    </nav>
+    <nav class="tags">
+      <div class="tag">Color Palette</div>
+      <div class="tag">Customization</div>
+      <div class="tag">All Site</div>
+    </nav>
+  </a>
+
+</div>
+
+</div>
+</div>
+
+
+  <script src="isotope.pkgd.js"></script>
+<script src="filter.js"></script>
     <script>
     window.onload = function () {
       document.body.classList.add('loaded_hiding');
@@ -114,27 +168,43 @@ info
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById("modal-btn");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var svgedit = document.getElementById("svgedit");
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
-  modal.style.display = "block";
+  modal.classList.toggle("modal-visible");
+  modal.classList.toggle("animate__animated");
+  modal.classList.toggle("animate__fadeInRight");
+  modal.style.setProperty('--animate-duration', '0.7s');
+  svgedit.classList.toggle("toggle-icon");
+  svgedit.classList.toggle("animate__animated");
+  svgedit.classList.toggle("animate__fadeIn");
+  svgedit.style.setProperty('--animate-duration', '0.7s');
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
+  
+  window.onload = function () {
+    let refresh = document.getElementById("button1");
+    refresh.click();
+    var TimetoClose;
+    TimetoClose = window.setTimeout(refresh.click(), 1000); 
+    }
 window.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+  modal.classList.toggle("modal-visible");
+  modal.classList.toggle("animate__animated");
+  modal.classList.toggle("animate__fadeInRight");
+  modal.style.setProperty('--animate-duration', '0.7s');
+  svgedit.classList.toggle("toggle-icon");
+  svgedit.classList.toggle("animate__animated");
+  svgedit.classList.toggle("animate__fadeIn");
+  svgedit.style.setProperty('--animate-duration', '0.7s');
   }
 }
+  
+
   </script>
-  </body>
+</body>
 </html>
