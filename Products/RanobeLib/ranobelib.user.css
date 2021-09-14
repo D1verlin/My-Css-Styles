@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           RanobeLib
 @namespace      github.com/D1verlin
-@version        1.0.0
+@version        1.0.1
 @updateURL      https://d1verlin.github.io/My-Css-Styles/Products/RanobeLib/ranobelib.user.css
 @description    RanobeLib Rebuild
 @author         Diverlin
@@ -13,10 +13,10 @@
 ==/UserStyle== */
 
 @-moz-document domain("ranobelib.me") {
-   :root, html[data-mode=dark] {
-    --primary: var(--Primary-Default);
-    --primary-lighten: var(--Primary-Lighten);
-    --primary-darken: var(--Primary-Darken);
+    :root, html[data-mode=dark] {
+    --primary: Primary-Default;
+    --primary-lighten: Primary-Lighten;
+    --primary-darken: Primary-Darken;
 if TransparentH == Invisible {
       .header {
         --background-header: transparent;
@@ -30,11 +30,11 @@ if TransparentH == Invisible {
 
 
 html[data-mode=dark] {
-    --button-primary-bg: var(--Primary-Lighten);
-    --button-primary-bg-hover: var(--Primary-Lighten);
-    --button-primary-bg-active: var(--Primary-Lighten);
-    --purple: var(--Primary-Lighten);
-    --text-link: var(--Primary-Lighten);
+    --button-primary-bg: Primary-Default;
+    --button-primary-bg-hover: Primary-Darken;
+    --button-primary-bg-active: Primary-Darken;
+    --purple: Primary-Lighten;
+    --text-link: Primary-Lighten;
     
 
 }
@@ -42,7 +42,7 @@ html[data-mode=dark] {
 
 
 .tag-item:hover {
-    color: var(--Primary-Default);
+    color: Primary-Default;
     text-decoration: none;
 }
 
@@ -76,8 +76,6 @@ html[data-mode=dark] {
 .header__other-sites {
     right: -20px;
 }
-
-
 
   .header__left {
 background: url(https://d1verlin.github.io/My-Css-Styles/Products/RanobeLib/img/logo.png) no-repeat; /* Your image for logo */
