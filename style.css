@@ -1,3 +1,20 @@
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #374150;
+  border-radius: 46px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #485467;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1e242e;
+}
 a {
   text-decoration: none;
 }
@@ -419,12 +436,12 @@ header h1 {
 }
 .button:active,
 .button.is-checked {
-  background-color: #C2A179;
-  color: #181D25;
+  background-color: #61564B;
+  color: #FFCC8E;
   border: 2px solid #C2A179;
 }
 .button.is-checked {
-  color: #181D25;
+  color: #FFCC8E;
 }
 .button:active {
   -webkit-box-shadow: none;

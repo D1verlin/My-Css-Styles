@@ -1,19 +1,19 @@
 /* ==UserStyle==
-@name           MangaLib
+@name           RanobeLib
 @namespace      github.com/D1verlin
-@version        1.0.3
-@updateURL      https://d1verlin.github.io/My-Css-Styles/Products/MangaLib/mangalib.user.css
-@description    MangaLib Rebuild
+@version        1.0.0
+@updateURL      https://d1verlin.github.io/My-Css-Styles/Products/RanobeLib/ranobelib.user.css
+@description    RanobeLib Rebuild
 @author         Diverlin
-@var color Primary-Default "Primary Default" #FFCC90
-@var color Primary-Lighten "Primary Lighten" #FFD8AA
-@var color Primary-Darken "Primary Darken" #F3C48D
+@var color Primary-Default "Primary Default" #2ea3e7
+@var color Primary-Lighten "Primary Lighten" #40abe9
+@var color Primary-Darken "Primary Darken" #40abe9
 @preprocessor stylus
 @var select TransparentH "transparent header" ["Visible:Visible", "Invisible:Invisible"]
 ==/UserStyle== */
 
-@-moz-document domain("mangalib.me") {
-    :root, html[data-mode=dark] {
+@-moz-document domain("ranobelib.me") {
+   :root, html[data-mode=dark] {
     --primary: var(--Primary-Default);
     --primary-lighten: var(--Primary-Lighten);
     --primary-darken: var(--Primary-Darken);
@@ -77,7 +77,9 @@ html[data-mode=dark] {
     right: -20px;
 }
 
+
+
   .header__left {
-background: url(https://d1verlin.github.io/My-Css-Styles/Products/MangaLib/img/logo.png) no-repeat; /* Your image for logo */
-    width:56px;
+background: url(https://d1verlin.github.io/My-Css-Styles/Products/RanobeLib/img/logo.png) no-repeat; /* Your image for logo */
+width:56px;
 }}

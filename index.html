@@ -53,6 +53,7 @@
   	<div class="preloader">
   <div class="preloader__row">
   </div>
+  </div>
 <header>
   <div class="group">
 	<h1>My Css Styles</h1>
@@ -78,8 +79,8 @@
 
   <div class="ui-group">
     <div class="button-group js-radio-button-group">
-      <button id="button1" class="button" data-filter=".ColorPalette">Color Palette</button>
-      <button id="button2" class="button" data-filter=".Customization">Customization</button>
+      <button id="btn-refresh" class="button" data-filter=".ColorPalette">Color Palette</button>
+      <button class="button" data-filter=".Customization">Customization</button>
       <button class="button" data-filter=".AllSite">All Site</button>
       <button class="button" data-filter=".Beta">Beta</button>
       <button class="button" data-filter=".Images">Images</button>
@@ -101,6 +102,30 @@
     </nav>
   </a>
 
+  <a href="Products/RanobeLib/RanobeLib.html" class="block ColorPalette Customization Images">
+    <nav class="info">
+      <div class="header"><h2>RanobeLib</h2><img src="https://ranobelib.me/icons/favicon-32x32.png"></div>
+      <div class="description"><p>14.09.2021</p><h3>ranobelib.me</h3></div>
+    </nav>
+    <nav class="tags">
+      <div class="tag">Color Palette</div>
+      <div class="tag">Customization</div>
+      <div class="tag">Images</div>
+    </nav>
+  </a>
+
+  <a href="Products/HentaiLib/HentaiLib.html" class="block ColorPalette Customization Images">
+    <nav class="info">
+      <div class="header"><h2>HentaiLib</h2><img src="https://hentailib.me/icons/favicon-32x32.png"></div>
+      <div class="description"><p>14.09.2021</p><h3>hentailib.me</h3></div>
+    </nav>
+    <nav class="tags">
+      <div class="tag">Color Palette</div>
+      <div class="tag">Customization</div>
+      <div class="tag">Images</div>
+    </nav>
+  </a>
+
     <a href="Products/YummyAnime/YummyAnime.html" class="block ColorPalette Customization Images">
     <nav class="info">
       <div class="header"><h2>YummyAnime</h2><img src="Products/YummyAnime/img/yummy-32.png"></div>
@@ -113,7 +138,7 @@
     </nav>
   </a>
 
-    <a href="Products/Animevost/Animevost.html" class="block ColorPalette Beta">
+    <a href="Products/AnimeVost/Animevost.html" class="block ColorPalette Beta">
     <nav class="info">
       <div class="header"><h2>Animevost</h2><img src="https://animevost.org/favicon-32x32.png"></div>
       <div class="description"><p>19.05.2021</p><h3>animevost.org</h3></div>
@@ -186,7 +211,7 @@ btn.onclick = function() {
 
   
   window.onload = function () {
-    let refresh = document.getElementById("button1");
+    let refresh = document.getElementById("btn-refresh");
     refresh.click();
     var TimetoClose;
     TimetoClose = window.setTimeout(refresh.click(), 1000); 
