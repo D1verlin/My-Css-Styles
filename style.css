@@ -61,8 +61,8 @@ header h1 {
   transition: 0.3s;
 }
 .header-btn svg {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
 }
 .header-btn:hover {
   background: #FFCC8E;
@@ -359,9 +359,13 @@ header h1 {
   letter-spacing: 0.03em;
 }
 .header svg {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   color: #CFA470;
+}
+.header img {
+  width: 32px;
+  height: 32px;
 }
 .tags {
   display: -webkit-box;

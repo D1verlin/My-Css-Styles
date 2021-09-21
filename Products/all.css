@@ -125,6 +125,8 @@ header h1 {
 
 header img {
 	margin-right: 10px;
+	width: 32px;
+	height: 32px;
 }
 
 p {
