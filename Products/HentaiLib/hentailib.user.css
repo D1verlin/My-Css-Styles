@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           HentaiLib
 @namespace      github.com/D1verlin
-@version        1.0.1
+@version        1.1.1
 @updateURL      https://d1verlin.github.io/My-Css-Styles/Products/HentaiLib/hentailib.user.css
 @description    HentaiLib Rebuild
 @author         Diverlin
@@ -10,6 +10,7 @@
 @var color Primary-Darken "Primary Darken" #c34c4c
 @preprocessor stylus
 @var select TransparentH "transparent header" ["Visible:Visible", "Invisible:Invisible"]
+@var checkbox NewMenu "new menu" 0
 ==/UserStyle== */
 
 @-moz-document domain("hentailib.me") {
@@ -82,4 +83,39 @@ html[data-mode=dark] {
   .header__left {
 background: url(https://d1verlin.github.io/My-Css-Styles/Products/HentaiLib/img/logo.png) no-repeat; /* Your image for logo */
 width:56px;
-}}
+}
+
+// New menu
+
+if NewMenu == 1 {
+
+#tippy-1 .menu__item:nth-child(1) {
+    background:url(https://raw.githubusercontent.com/D1verlin/My-Css-Styles/main/Products/MangaLib/img/logo.png) no-repeat;
+}
+
+#tippy-1 .menu__item:nth-child(2) {
+    background:url(https://raw.githubusercontent.com/D1verlin/My-Css-Styles/main/Products/RanobeLib/img/logo.png) no-repeat;
+}
+
+#tippy-1 .menu__item {
+    color: #00000000 !important;
+    padding: 23px;
+    margin: 0 4px 1px;
+    opacity:80%;
+    transition:0.3s;
+}
+
+#tippy-1 .menu__item:active, .menu__item:focus, .menu__item:hover, .menu__item_active {
+    opacity:100% !important;
+}
+
+#tippy-1 .menu {
+    padding: 0;
+    width: 64px !important;
+    min-width:auto !important;
+}
+
+}
+
+
+} /* end. */
