@@ -87,15 +87,15 @@ background: url(https://d1verlin.github.io/My-Css-Styles/Products/MangaLib/img/l
 
 if NewMenu == 1 {
 
-#tippy-7 .menu__item:nth-child(1) {
+#tippy-2 .menu__item:nth-child(1) {
     background:url(https://raw.githubusercontent.com/D1verlin/My-Css-Styles/main/Products/RanobeLib/img/logo.png) no-repeat;
 }
 
-#tippy-7 .menu__item:nth-child(2) {
+#tippy-2 .menu__item:nth-child(2) {
     background:url(https://raw.githubusercontent.com/D1verlin/My-Css-Styles/main/Products/HentaiLib/img/logo.png) no-repeat;
 }
 
-#tippy-7 .menu__item {
+#tippy-2 .menu__item {
     color: #00000000 !important;
     padding: 23px;
     margin: 0 4px 1px;
@@ -103,11 +103,11 @@ if NewMenu == 1 {
     transition:0.3s;
 }
 
-#tippy-7 .menu__item:active, .menu__item:focus, .menu__item:hover, .menu__item_active {
+#tippy-2 .menu__item:active, .menu__item:focus, .menu__item:hover, .menu__item_active {
     opacity:100% !important;
 }
 
-#tippy-7 .menu {
+#tippy-2 .menu {
     padding: 0;
     width: 64px !important;
     min-width:auto !important;
