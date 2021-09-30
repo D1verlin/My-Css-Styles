@@ -1,3 +1,21 @@
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #374150;
+  border-radius: 46px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #485467;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1e242e;
+}
+
 :root {
 	--bg:#1E242E;
 	--font-primary:#FFCC8E;
@@ -110,6 +128,7 @@ header {
 	display: inline-flex;
 	margin-left: 20px;
 	margin-top: 20px;
+	gap: 10px;
 
 }
 
@@ -124,7 +143,6 @@ header h1 {
 }
 
 header img {
-	margin-right: 10px;
 	width: 32px;
 	height: 32px;
 }
@@ -309,7 +327,6 @@ li span {
 }
 
 #info_icon {
-	margin-right: 10px;
 	font-size: 32px;
 	color: #fff;
 }
