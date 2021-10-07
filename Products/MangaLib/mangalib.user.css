@@ -12,114 +12,118 @@
 @var select TransparentH "transparent header" ["Visible:Visible", "Invisible:Invisible"]
 @var checkbox NewMenu "new menu" 0
 ==/UserStyle== */
-
 @-moz-document domain("mangalib.me") {
-    :root, html[data-mode=dark] {
-    --primary: Primary-Default;
-    --primary-lighten: Primary-Lighten;
-    --primary-darken: Primary-Darken;
-if TransparentH == Invisible {
-      .header {
-        --background-header: transparent;
-      }
-    } else if TransparentH == Visible {
-        .header {
-        --background-header: #1c1c1e;
-      }
-    }
-        }
+	:root,
+	html[data-mode=dark] {
+		--primary: Primary-Default;
+		--primary-lighten: Primary-Lighten;
+		--primary-darken: Primary-Darken;
+		if TransparentH==Invisible {
+			.header {
+				--background-header: transparent;
+			}
+		}
+		else if TransparentH==Visible {
+			.header {
+				--background-header: #1c1c1e;
+			}
+		}
+	}
 
 
-html[data-mode=dark] {
-    --button-primary-bg: Primary-Default;
-    --button-primary-bg-hover: Primary-Darken;
-    --button-primary-bg-active: Primary-Darken;
-    --purple: Primary-Lighten;
-    --text-link: Primary-Lighten;
-    
+	html[data-mode=dark] {
+		--button-primary-bg: Primary-Default;
+		--button-primary-bg-hover: Primary-Darken;
+		--button-primary-bg-active: Primary-Darken;
+		--purple: Primary-Lighten;
+		--text-link: Primary-Lighten;
+	}
 
+
+
+	.tag-item:hover {
+		color: Primary-Default;
+		text-decoration: none;
+	}
+
+	.header-right-menu__avatar {
+		width: 40px;
+		height: 40px;
+		background: #fff;
+		border-radius: 56px;
+		cursor: pointer;
+	}
+
+
+
+	.header__logo {
+		opacity: 0;
+		width: 56px;
+	}
+
+	.header__logo img {
+		width: 56px;
+	}
+	.header__logo:hover {
+		opacity: 0;
+	}
+	.xmas-three {
+		display: none;
+	}
+	.header__item {
+		min-width: 0;
+	}
+	.header__other-sites {
+		right: -20px;
+	}
+
+	.header__left {
+		background: url(https://d1verlin.github.io/My-Css-Styles/Products/MangaLib/img/logo.png) no-repeat;
+		/* Your image for logo */
+		width: 56px;
+	} // New menu
+	if NewMenu==1 {
+
+		#tippy-7 .menu__item:nth-child(1) {
+			background: url(https://raw.githubusercontent.com/D1verlin/My-Css-Styles/main/Products/RanobeLib/img/logo.png) no-repeat;
+		}
+
+		#tippy-7 .menu__item:nth-child(2) {
+			background: url(https://raw.githubusercontent.com/D1verlin/My-Css-Styles/main/Products/HentaiLib/img/logo.png) no-repeat;
+		}
+
+		#tippy-2 .menu__item:nth-child(1) {
+			background: url(https://raw.githubusercontent.com/D1verlin/My-Css-Styles/main/Products/RanobeLib/img/logo.png) no-repeat;
+		}
+
+		#tippy-2 .menu__item:nth-child(2) {
+			background: url(https://raw.githubusercontent.com/D1verlin/My-Css-Styles/main/Products/HentaiLib/img/logo.png) no-repeat;
+		}
+
+
+		#tippy-7,
+		#tippy-2 .menu__item {
+			color: #00000000 !important;
+			padding: 23px;
+			margin: 0 4px 1px;
+			opacity: 80%;
+			transition: 0.3s;
+		}
+
+		#tippy-7,
+		#tippy-2 .menu__item:active,
+		.menu__item:focus,
+		.menu__item:hover,
+		.menu__item_active {
+			opacity: 100% !important;
+		}
+
+		#tippy-7,
+		#tippy-2 .menu {
+			padding: 0;
+			width: 64px !important;
+			min-width: auto !important;
+		}
+	}
 }
-
-
-
-.tag-item:hover {
-    color: Primary-Default;
-    text-decoration: none;
-}
-
-.header-right-menu__avatar {
-    width: 40px;
-    height: 40px;
-    background: #fff;
-    border-radius: 56px;
-    cursor: pointer;
-}
-
-
-
-.header__logo {
-    opacity: 0;
-    width:56px;
-}
-
-.header__logo img {
-    width:56px;
-}
-.header__logo:hover {
-    opacity: 0;
-}
-.xmas-three {
-    display:none;
-}
-.header__item {
-    min-width:0;
-}
-.header__other-sites {
-    right: -20px;
-}
-
-  .header__left {
-background: url(https://d1verlin.github.io/My-Css-Styles/Products/MangaLib/img/logo.png) no-repeat; /* Your image for logo */
-    width:56px;
-}
-
-// New menu
-
-if NewMenu == 1 {
-
-#tippy-7 .menu__item:nth-child(1) {
-    background:url(https://raw.githubusercontent.com/D1verlin/My-Css-Styles/main/Products/RanobeLib/img/logo.png) no-repeat;
-}
-
-#tippy-7 .menu__item:nth-child(2) {
-    background:url(https://raw.githubusercontent.com/D1verlin/My-Css-Styles/main/Products/HentaiLib/img/logo.png) no-repeat;
-}
-
-#tippy-2 .menu__item:nth-child(1) {
-    background:url(https://raw.githubusercontent.com/D1verlin/My-Css-Styles/main/Products/RanobeLib/img/logo.png) no-repeat;
-}
-
-#tippy-2 .menu__item:nth-child(2) {
-    background:url(https://raw.githubusercontent.com/D1verlin/My-Css-Styles/main/Products/HentaiLib/img/logo.png) no-repeat;
-}
-
-
-#tippy-7, #tippy-2 .menu__item {
-    color: #00000000 !important;
-    padding: 23px;
-    margin: 0 4px 1px;
-    opacity:80%;
-    transition:0.3s;
-}
-
-#tippy-7, #tippy-2 .menu__item:active, .menu__item:focus, .menu__item:hover, .menu__item_active {
-    opacity:100% !important;
-}
-
-#tippy-7, #tippy-2 .menu {
-    padding: 0;
-    width: 64px !important;
-    min-width:auto !important;
-}
-}
-}
+/* end. */
