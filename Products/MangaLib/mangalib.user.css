@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           MangaLib
 @namespace      github.com/D1verlin
-@version        1.1.6
+@version        1.1.7
 @updateURL      https://d1verlin.github.io/My-Css-Styles/Products/MangaLib/mangalib.user.css
 @description    MangaLib Rebuild
 @author         Diverlin
@@ -101,7 +101,7 @@
 		}
 
 
-		#tippy-7,
+		#tippy-7 .menu__item, 
 		#tippy-2 .menu__item {
 			color: #00000000 !important;
 			padding: 23px;
@@ -110,7 +110,10 @@
 			transition: 0.3s;
 		}
 
-		#tippy-7,
+		#tippy-7 .menu__item:active,
+		.menu__item:focus,
+		.menu__item:hover,
+		.menu__item_active,
 		#tippy-2 .menu__item:active,
 		.menu__item:focus,
 		.menu__item:hover,
@@ -118,7 +121,7 @@
 			opacity: 100% !important;
 		}
 
-		#tippy-7,
+		#tippy-7 .menu,
 		#tippy-2 .menu {
 			padding: 0;
 			width: 64px !important;
