@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           YummyAnime
 @namespace      github.com/D1verlin
-@version        1.1.0
+@version        1.2.0
 @updateURL      https://d1verlin.github.io/My-Css-Styles/Products/YummyAnime/YummyAnime.user.css
 @description    YummyAnime Rebuild
 @author         Diverlin
@@ -80,5 +80,28 @@ body .fixed .logo {
     .tabs li {
     border-radius: 44px;
     }
+    
+    .ss-content {
+    margin: 5px 0 0;
+    border-radius: 10px;
+    border-top: 1px solid var(--border-second);
+}
+    
+    .ss-content .ss-list {
+    padding: 7px;
+    gap: 7px;
+    display: flex;
+    flex-direction: column;
+}
+    
+    .ss-content .ss-list .ss-option:first-of-type {
+    border-top: none; 
+}
+    
+    .ss-content .ss-list .ss-option {
+    padding: 6px;
+    border-top: 0;
+    border-radius: 7px;
+}
     
 }

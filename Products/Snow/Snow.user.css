@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Snow
 @namespace      github.com/D1verlin
-@version        1.0.1
+@version        1.0.2
 @updateURL      https://d1verlin.github.io/My-Css-Styles/Products/Snow/Snow.user.css
 @description    Snow for all sites
 @author         Diverlin
@@ -11,7 +11,7 @@
     body:after {
 	 content: '';
     top: 0;
-    background: url(https://diverlin.tk/snow/snow_1.png) fixed,url(https://diverlin.tk/snow/snow_2.png) fixed,url(https://diverlin.tk/snow/snow_3.png) fixed;
+    background: url(https://d1verlin.github.io/My-Css-Styles/Products/Snow/img/snow_1.png) fixed,url(https://d1verlin.github.io/My-Css-Styles/Products/Snow/img/snow_2.png) fixed,url(https://d1verlin.github.io/My-Css-Styles/Products/Snow/img/snow_3.png) fixed;
     -webkit-animation: animation-snow 10s linear infinite;
     -moz-animation: animation-snow 10s linear infinite;
     -ms-animation: animation-snow 10s linear infinite;
