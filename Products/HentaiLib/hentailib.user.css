@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           HentaiLib
 @namespace      github.com/D1verlin
-@version        1.1.1
+@version        1.1.2
 @updateURL      https://d1verlin.github.io/My-Css-Styles/Products/HentaiLib/hentailib.user.css
 @description    HentaiLib Rebuild
 @author         Diverlin
@@ -21,6 +21,7 @@
 if TransparentH == Invisible {
       .header {
         --background-header: transparent;
+        backdrop-filter: blur(6px);
       }
     } else if TransparentH == Visible {
         .header {
