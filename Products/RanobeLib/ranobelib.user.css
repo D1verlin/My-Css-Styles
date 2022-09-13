@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           RanobeLib
 @namespace      github.com/D1verlin
-@version        1.1.3
+@version        1.1.2
 @updateURL      https://d1verlin.github.io/My-Css-Styles/Products/RanobeLib/ranobelib.user.css
 @description    RanobeLib Rebuild
 @author         Diverlin
@@ -80,7 +80,7 @@ html[data-mode=dark] {
 }
 
   .header__left {
-background: url(https://lh3.google.com/u/0/d/1AF1rlzvZtdyD3VGS5i9Stnwf9EENInxy=w1290-h977-iv1) no-repeat; /* Your image for logo */
+background: url(https://d1verlin.github.io/My-Css-Styles/Products/RanobeLib/img/logo.png) no-repeat; /* Your image for logo */
 width:56px;
 }
 

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           MangaLib
 @namespace      github.com/D1verlin
-@version        1.2.0
+@version        1.1.9
 @updateURL      https://d1verlin.github.io/My-Css-Styles/Products/MangaLib/mangalib.user.css
 @description    MangaLib Rebuild
 @author         Diverlin
@@ -79,7 +79,7 @@
 	}
 
 	.header__left {
-		background: url(https://lh3.google.com/u/0/d/1nLfkDv1KQZ5ZrOSfLloCPpP6XvVmfWWf=w1858-h977-iv3) no-repeat;
+		background: url(https://d1verlin.github.io/My-Css-Styles/Products/MangaLib/img/logo.png) no-repeat;
 		/* Your image for logo */
 		width: 56px;
 	} 
