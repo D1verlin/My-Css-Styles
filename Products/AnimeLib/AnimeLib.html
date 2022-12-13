@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-B4MS5QMJJL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B4MS5QMJJL');
+</script>
+	<title>MCS | HentaiLib</title>
+	<link rel="stylesheet" type="text/css" href="../all.css">
+	<link rel="stylesheet" type="text/css" href="Grid.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../../Fonts/GeometriaFont.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<div class="preloader">
+  <div class="preloader__row">
+  </div>
+</div>
+
+	<div class="container">
+<aside>
+	<div class="box" id="info">
+		<header>
+			<img src="https://animelib.me/icons/favicon-32x32.png"> <h1>HentaiLib</h1>
+		</header>
+		<div class="info_block">
+			<div>
+						<p>Data of
+Creation:</p><p id="date">13.12.2022</p>
+			</div>
+<div>
+			<p>Used on
+Site:</p><p id="date">animelib.me</p>
+</div>
+
+</div>
+<a id="Ib" href="../../index.html">
+<div class="button" id="b_anim">Back</div></a>
+	</div>
+	<div class="box" id="install">
+				<header>
+			 <h1>Install</h1>
+		</header>
+		<a href="https://raw.githubusercontent.com/D1verlin/My-Css-Styles/main/Products/AnimeLib/animelib.user.css" class="button_s" id="b_anim">Stylus / Copy</a>
+	</div>
+	<div class="box" id="links">
+				<header>
+			 <h1>Other styles</h1>
+		</header>
+		<div class="other_list">
+		<a href="../Snow/Snow.html" class="button_b" id="b_anim">Snow</a>
+		<a href="../YummyAnime/YummyAnime.html" class="button_b" id="b_anim">YA</a>
+		<a href="../AnimeVost/Animevost.html" class="button_b" id="b_anim">AV</a>
+		</div>
+	</div>
+	</aside>
+
+
+
+	<div class="box" id="changes">
+				<header>
+			 <h1>Info</h1>
+		</header>
+		<div class="changes_container">
+			<div id="block_s" style="grid-area: B;">
+			<header id="h_s">Briefly</header>
+			<p id="i_s">| Color Palette</p>
+			<p id="i_s">| Some images</p>
+			</div>
+
+			<div id="block_s" style="grid-area: L;">
+			<header id="h_s">Logo</header>
+			<p id="i_s">If you change the color scheme of the site, then I advise you to recolor the logo. ( click to img to download it )</p>
+			<a href="img/logo.png"><img src="img/logo.png"></a>
+			</div>			
+
+			<div id="block_s" style="grid-area: CP;">
+			<header id="h_s">Color Palette</header>
+			<p id="i_s">You can change the color palette via the settings in the plugin Stylus.</p>
+			</div>	
+
+		</div>
+	</div>
+
+</div>
+
+<script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+
+        function List() {
+    var y = document.getElementById("folder");
+    var x = document.getElementById("List");
+    if (x.style.display === "none") {
+        x.style.display = "flex";
+        y.innerHTML = "folder_open";
+    } else {
+        x.style.display = "none";
+        y.innerHTML = "folder";
+    }
+}
+  </script>
+</body>
+</html>

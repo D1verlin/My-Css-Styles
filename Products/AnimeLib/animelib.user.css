@@ -1,0 +1,88 @@
+/* ==UserStyle==
+@name           AnimeLib
+@namespace      github.com/D1verlin
+@version        1.0.0
+@updateURL      https://d1verlin.github.io/My-Css-Styles/Products/AnimeLib/animelib.user.css
+@description    AnimeLib Rebuild
+@author         Diverlin
+@var color Primary-Default "Primary Default" #662bb3
+@var color Primary-Lighten "Primary Lighten" #6d2ebf
+@var color Primary-Darken "Primary Darken" #6d2ebf
+@preprocessor stylus
+@var select TransparentH "transparent header" ["Visible:Visible", "Invisible:Invisible"]
+@var checkbox NewMenu "new menu" 0
+==/UserStyle== */
+
+@-moz-document domain("animelib.me") {
+	:root,
+	html[data-mode=dark] {
+		--primary: Primary-Default;
+		--primary-lighten: Primary-Lighten;
+		--primary-darken: Primary-Darken;
+		if TransparentH==Invisible {
+			.header {
+				--background-header: transparent;
+				backdrop-filter: blur(6px);
+			}
+		}
+		else if TransparentH==Visible {
+			.header {
+				--background-header: #1c1c1e;
+			}
+		}
+	}
+
+
+	html[data-mode=dark] {
+		--button-primary-bg: Primary-Default;
+		--button-primary-bg-hover: Primary-Darken;
+		--button-primary-bg-active: Primary-Darken;
+		--purple: Primary-Lighten;
+		--text-link: Primary-Lighten;
+	}
+
+
+
+	.tag-item:hover {
+		color: Primary-Default;
+		text-decoration: none;
+	}
+
+	.header-right-menu__avatar {
+		width: 40px;
+		height: 40px;
+		background: #fff;
+		border-radius: 56px;
+		cursor: pointer;
+	}
+
+
+
+	.header__logo {
+		opacity: 0;
+		width: 56px;
+	}
+
+	.header__logo img {
+		width: 56px;
+	}
+	.header__logo:hover {
+		opacity: 0;
+	}
+	.xmas-three {
+		display: none;
+	}
+	.header__item {
+		min-width: 0;
+	}
+	.header__other-sites {
+		right: -20px;
+	}
+
+	.header__left {
+		background: url(https://lh3.google.com/u/0/d/1kaRlk6ev6sGz4R6J1NEox3dKHj6EW-l9=w1920-h929-iv1) no-repeat;
+		/* Your image for logo */
+		width: 56px;
+	} 
+}
+/* end. */
