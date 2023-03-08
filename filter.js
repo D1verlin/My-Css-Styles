@@ -5,7 +5,7 @@ var $grid = $('.grid').isotope({
   itemSelector: '.block',
   masonry: {
     gutter: 10,
-    columnWidth: 41 // Костыль (Нужно регулировать при добавлении новых стилей)
+    columnWidth: 15 // Костыль (Нужно регулировать при добавлении новых стилей)
   }
 });
 
