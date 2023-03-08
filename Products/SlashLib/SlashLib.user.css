@@ -12,7 +12,7 @@
 @var select TransparentH "transparent header" ["Visible:Visible", "Invisible:Invisible"]
 @var checkbox NewMenu "new menu" 0
 ==/UserStyle== */
-@-moz-document domain("SlashLib.me") {
+@-moz-document domain("slashlib.me") {
 	:root,
 	html[data-mode=dark] {
 		--primary: Primary-Default;
