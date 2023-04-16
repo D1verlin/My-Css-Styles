@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           HentaiLib
 @namespace      github.com/D1verlin
-@version        1.1.2
+@version        1.1.3
 @updateURL      https://d1verlin.github.io/My-Css-Styles/Products/HentaiLib/hentailib.user.css
 @description    HentaiLib Rebuild
 @author         Diverlin
@@ -13,7 +13,7 @@
 @var checkbox NewMenu "new menu" 0
 ==/UserStyle== */
 
-@-moz-document domain("hentailib.me") {
+@-moz-document domain("hentailib.org") {
    :root, html[data-mode=dark] {
     --primary: Primary-Default;
     --primary-lighten: Primary-Lighten;
